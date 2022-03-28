@@ -235,69 +235,69 @@ a:focus {
 /* reverse horizontal row modifier */
 
 .o-layout--row-reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 /* Horizontal alignment modifiers*/
 
 .o-layout--justify-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .o-layout--justify-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .o-layout--justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .o-layout--justify-space-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .o-layout--justify-space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 /* Vertical item alignment modifiers */
 
 .o-layout--align-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .o-layout--align-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .o-layout--align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .o-layout--align-baseline {
-    align-items: baseline;
+  align-items: baseline;
 }
 
 /* Vertical content alignment modifiers. Only work if there is one than one flex item */
 
 .o-layout--align-content-start {
-    align-content: flex-start;
+  align-content: flex-start;
 }
 
 .o-layout--align-content-end {
-    align-content: flex-end;
+  align-content: flex-end;
 }
 
 .o-layout--align-content-center {
-    align-content: center;
+  align-content: center;
 }
 
 .o-layout--align-content-space-around {
-    align-content: space-around;
+  align-content: space-around;
 }
 
 .o-layout--align-content-space-between {
-    align-content: space-between;
+  align-content: space-between;
 }
 
 /*------------------------------------*\
@@ -309,6 +309,51 @@ a:focus {
     ---
     A small component to demonstrate the layout items
 */
+.c-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+.c-author__image {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.c-author__name,
+.c-author__meta {
+  margin-bottom: 0;
+}
+.c-author__name {
+  font-size: 16px;
+  line-height: 24px;
+}
+.c-author__meta {
+  font-size: 14px;
+  font-family: 'inter web', 'Helvetica Neue', Helvetica, arial, sans-serif;
+}
+
+.c-article__img{}
+.c-article_header,
+.c-article__body{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+}
+
+@media (min-width: 992px) {
+  .c-article__body {
+    display: flex;
+    gap: 24px;
+  }
+  .c-author {
+    width: 25%;
+  }
+  .c-article__content {
+    width: 75%;
+  }
+}
 
 .c-layout-block {
   background-color: LightGrey;
@@ -551,50 +596,50 @@ a:focus {
 }
 
 @media (min-width: 1200px) {
-      .u-1-of-2-bp4 {
-  flex-basis: calc(100% / 2) !important;
-}
-
-.u-1-of-3-bp4 {
-  flex-basis: calc(100% / 3) !important;
-}
-
-.u-2-of-3-bp4 {
-  flex-basis: calc(100% / 3 * 2) !important;
-}
-
-.u-1-of-4-bp4 {
-  flex-basis: calc(100% / 4) !important;
-}
-
-.u-3-of-4-bp4 {
-  flex-basis: calc(100% / 4 * 3) !important;
-}
-
-.u-1-of-5-bp4 {
-  flex-basis: calc(100% / 5) !important;
-}
-
-.u-2-of-5-bp4 {
-  flex-basis: calc(100% / 5 * 2) !important;
-}
-
-.u-3-of-5-bp4 {
-  flex-basis: calc(100% / 5 * 3) !important;
-}
-
-.u-4-of-5-bp4 {
-  flex-basis: calc(100% / 5 * 4) !important;
-}
-
-.u-1-of-6-bp4 {
-  flex-basis: calc(100% / 6) !important;
-}
-
-.u-5-of-6-bp4 {
-  flex-basis: calc(100% / 6 * 5) !important;
-}
+  .u-1-of-2-bp4 {
+    flex-basis: calc(100% / 2) !important;
   }
+
+  .u-1-of-3-bp4 {
+    flex-basis: calc(100% / 3) !important;
+  }
+
+  .u-2-of-3-bp4 {
+    flex-basis: calc(100% / 3 * 2) !important;
+  }
+
+  .u-1-of-4-bp4 {
+    flex-basis: calc(100% / 4) !important;
+  }
+
+  .u-3-of-4-bp4 {
+    flex-basis: calc(100% / 4 * 3) !important;
+  }
+
+  .u-1-of-5-bp4 {
+    flex-basis: calc(100% / 5) !important;
+  }
+
+  .u-2-of-5-bp4 {
+    flex-basis: calc(100% / 5 * 2) !important;
+  }
+
+  .u-3-of-5-bp4 {
+    flex-basis: calc(100% / 5 * 3) !important;
+  }
+
+  .u-4-of-5-bp4 {
+    flex-basis: calc(100% / 5 * 4) !important;
+  }
+
+  .u-1-of-6-bp4 {
+    flex-basis: calc(100% / 6) !important;
+  }
+
+  .u-5-of-6-bp4 {
+    flex-basis: calc(100% / 6 * 5) !important;
+  }
+}
 
 /*------------------------------------*\
   #MEDIA
